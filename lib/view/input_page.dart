@@ -22,11 +22,11 @@ class _InputPageState extends State<InputPage> {
               children: [
                 TextField(
                   controller: titleController,
-                  style: TextStyle(
+                  style: const TextStyle(
                     color: Colors.white,
                     fontSize: 35,),
                   maxLines: 1,
-                  decoration: InputDecoration(
+                  decoration: const InputDecoration(
                     hintText: 'Title...',
                     hintStyle: TextStyle(
                         fontSize: 35,
@@ -36,12 +36,12 @@ class _InputPageState extends State<InputPage> {
                 ),
                 TextField(
                   controller: contentController,
-                  style: TextStyle(
+                  style: const TextStyle(
                       color: Colors.white,
                       fontSize: 30,
                       fontWeight: FontWeight.bold),
                   maxLines: 30,
-                  decoration: InputDecoration(
+                  decoration: const InputDecoration(
                     hintText: 'Content...',
                     hintStyle: TextStyle(fontSize: 30, color: Colors.white60),
                   ),
@@ -55,7 +55,7 @@ class _InputPageState extends State<InputPage> {
         onPressed: () {
           Navigator.pop(context,[titleController.text,contentController.text]);
         },
-        icon: Icon(
+        icon: const Icon(
           Icons.save,
           size: 40,
         ),
